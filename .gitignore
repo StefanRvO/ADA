@@ -82,7 +82,7 @@ target/
 *.mtc1
 *.out
 *.synctex.gz
-
+*.pdf
 
 #####CPP######
 # Compiled Object files
