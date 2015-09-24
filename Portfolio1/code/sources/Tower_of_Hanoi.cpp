@@ -1,3 +1,5 @@
+#define _unused(x) ((void)x) //Prevent compiler warnings about unused variables
+
 #include "../headers/Tower_of_Hanoi.h"
 #include <iostream>
 #include <cassert>
@@ -14,6 +16,7 @@ void Tower_of_Hanoi::move_discs(Rod &Move_from, Rod &Move_to, Rod &Last, const i
   { //If only moving one disc, just move it
     bool sucess = Move_to.pushDisc(Move_from.popDisc());
     assert(sucess == true);
+    _unused(sucess);
     if(verbose) this->print_step();
     return;
   }
