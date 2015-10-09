@@ -1,4 +1,4 @@
-#include "AVLNode.hpp"
+#include "AVLTree.hpp"
 #include <iostream>
 
 template <class Type, int ALLOWED_IMBALANCE>

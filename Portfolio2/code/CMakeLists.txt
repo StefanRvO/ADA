@@ -34,7 +34,6 @@ SET( CMAKE_CXX_FLAGS  "	-std=c++14 		\
 			-Werror			\
 			-DNDEBUG		\
 			-Wno-unused-variable 	\
-			-Ofast			\
 			-pedantic		\
 			-Wunused-variable	\
 " )

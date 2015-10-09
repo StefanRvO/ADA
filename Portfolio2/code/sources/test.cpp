@@ -1,10 +1,10 @@
-#include "../headers/AVLNode.hpp"
+#include "../headers/SplayTree.hpp"
 #include <iostream>
 int main()
 {
-  AVLTree<int, 1> Tree;
+  SplayTree<int> Tree;
   for(int i = 0; i < 20; i++)
     Tree.insert(i);
-  Tree.print();
+  Tree.contains(10);
 
 }
