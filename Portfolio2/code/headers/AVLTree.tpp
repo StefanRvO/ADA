@@ -132,7 +132,7 @@ AVLTree<Type, ALLOWED_IMBALANCE>::AVLTree()
 template <class Type, int ALLOWED_IMBALANCE>
 AVLTree<Type, ALLOWED_IMBALANCE>::~AVLTree()
 {
-  if(rootNode != nullptr) delete rootNode;
+  if(rootNode) delete rootNode;
 }
 
 template <class Type, int ALLOWED_IMBALANCE>

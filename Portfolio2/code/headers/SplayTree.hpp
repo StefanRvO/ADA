@@ -18,9 +18,8 @@ class SplayNode
 template <class Type>
 class SplayTree
 {
-  public:
+  private:
     SplayNode<Type> *rootNode = nullptr;
-  public:
     void zigzag(SplayNode<Type> *node);
     void zagzig(SplayNode<Type> *node);
     void zigzig(SplayNode<Type> *node);
@@ -29,13 +28,17 @@ class SplayTree
     void zag(SplayNode<Type> *node);
     void splay(SplayNode<Type> *node);
     bool contains(SplayNode<Type> *node, Type &test_element);
-    void insert(Type new_element);
     void insert(SplayNode<Type> *node, Type &new_element);
-    bool contains(Type test_element);
-    void print();
     int get_height();
+  public:
     SplayTree();
     ~SplayTree();
+    bool contains(Type test_element);
+    void print();
+    void insert(Type new_element);
+
+
+
 
 };
 

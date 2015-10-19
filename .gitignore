@@ -83,6 +83,10 @@ target/
 *.out
 *.synctex.gz
 *.pdf
+# minted
+_minted*
+*.pyg
+
 
 #####CPP######
 # Compiled Object files

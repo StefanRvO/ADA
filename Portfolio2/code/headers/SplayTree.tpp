@@ -39,7 +39,7 @@ SplayTree<Type>::SplayTree()
 template <class Type>
 SplayTree<Type>::~SplayTree()
 {
-  if(rootNode != nullptr) delete rootNode;
+  if(rootNode) delete rootNode;
 }
 
 template <class Type>
@@ -57,7 +57,7 @@ void SplayTree<Type>::insert(SplayNode<Type> *node, Type &new_element)
       node->right = new SplayNode<Type>(node);
     insert(node->right, new_element);
   }
-  else if(new_element < *(node->element))
+  else
   {
     if(!node->left)
       node->left = new SplayNode<Type>(node);

@@ -23,7 +23,6 @@ ENDIF()
 
 #Wanted to add more error flags, but Image.cpp throw warnings with -pedantic and -Wunused-variable
 SET( CMAKE_CXX_FLAGS  "	-std=c++14 		\
-			-g			\
 		 	-Wall 			\
 			-Wextra 		\
 			-Wshadow 		\
@@ -36,6 +35,7 @@ SET( CMAKE_CXX_FLAGS  "	-std=c++14 		\
 			-Wno-unused-variable 	\
 			-pedantic		\
 			-Wunused-variable	\
+			-Ofast			\
 " )
 
 add_subdirectory("sources")
